@@ -8,18 +8,13 @@ import styles from "./todo-list.module.css";
 function App() {
   const [text, setText] = useState("");
 
-  const r = useSelector((state) => state.todos.arr);
+  const todos = useSelector((state) => state.todos.arr);
   const dispatch = useDispatch();
 
   function handleAddTask() {
     dispatch(addTodo(text));
     setText("");
   }
-
-  // function handleRemoveTask(id) {
-  //   const newTodos = todos.filter((todo) => todo.id !== id);
-  //   setTodos(newTodos);
-  // }
 
   return (
     <div className={styles.todo}>
@@ -40,7 +35,7 @@ function App() {
         </button>
       </div>
       <ul>
-        {r.map((todo) => (
+        {todos.map((todo) => (
           <ListTask key={todo.id} {...todo} />
         ))}
       </ul>

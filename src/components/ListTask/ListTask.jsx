@@ -1,10 +1,15 @@
-const ListTask = ({ id, completed, text }) => {
+import { useDispatch } from "react-redux";
+import { removeTodo, toggleTodo } from "../../redux/TodoSlice";
+
+const ListTask = ({ id, text }) => {
+  const dispatch = useDispatch();
   return (
     <li>
-      <input onChange={() => (completed = !completed)} type="checkbox" />
+      <input onChange={() => dispatch(toggleTodo(id))} type="checkbox" />
       <span>{text}</span>
 
       <svg
+        onClick={() => dispatch(removeTodo(id))}
         width="20px"
         height="20px"
         viewBox="0 0 24 24"
