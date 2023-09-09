@@ -1,11 +1,10 @@
-const ListTask = ({ id, completed, text, handleRemoveTask }) => {
+const ListTask = ({ id, completed, text }) => {
   return (
     <li>
       <input onChange={() => (completed = !completed)} type="checkbox" />
       <span>{text}</span>
 
       <svg
-        onClick={() => handleRemoveTask(id)}
         width="20px"
         height="20px"
         viewBox="0 0 24 24"

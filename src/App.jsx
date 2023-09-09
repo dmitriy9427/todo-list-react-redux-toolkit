@@ -1,27 +1,25 @@
 import React, { useState } from "react";
-import styles from "./todo-list.module.css";
+import { useSelector, useDispatch } from "react-redux";
 import ListTask from "./components/ListTask/ListTask";
+import { addTodo } from "./redux/TodoSlice";
+
+import styles from "./todo-list.module.css";
 
 function App() {
-  const [todos, setTodos] = useState([]);
   const [text, setText] = useState("");
 
+  const r = useSelector((state) => state.todos.arr);
+  const dispatch = useDispatch();
+
   function handleAddTask() {
-    setTodos([
-      ...todos,
-      {
-        id: new Date().toLocaleString(),
-        text: text,
-        completed: false,
-      },
-    ]);
+    dispatch(addTodo(text));
     setText("");
   }
 
-  function handleRemoveTask(id) {
-    const newTodos = todos.filter((todo) => todo.id !== id);
-    setTodos(newTodos);
-  }
+  // function handleRemoveTask(id) {
+  //   const newTodos = todos.filter((todo) => todo.id !== id);
+  //   setTodos(newTodos);
+  // }
 
   return (
     <div className={styles.todo}>
@@ -42,14 +40,9 @@ function App() {
         </button>
       </div>
       <ul>
-        {todos.length > 0 &&
-          todos.map((todo) => (
-            <ListTask
-              key={todo.id}
-              {...todo}
-              handleRemoveTask={handleRemoveTask}
-            />
-          ))}
+        {r.map((todo) => (
+          <ListTask key={todo.id} {...todo} />
+        ))}
       </ul>
     </div>
   );
