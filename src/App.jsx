@@ -18,6 +18,7 @@ function App() {
 
   return (
     <div className={styles.todo}>
+      <h1 style={{ marginBottom: "20px" }}>Todo List</h1>
       <div className={styles.inputfield}>
         <input
           value={text}

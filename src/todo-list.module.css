@@ -2,6 +2,10 @@
   text-align: center;
   margin: 50px auto;
   max-width: 600px;
+  min-height: 400px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: rgb(138, 136, 136);
 }
 
 .inputfield {
@@ -49,8 +53,11 @@ ul {
 li {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  background-color: antiquewhite;
+  margin-bottom: 9px;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 li input:checked + span {

@@ -4,7 +4,7 @@ import { removeTodo, toggleTodo } from "../../redux/TodoSlice";
 const ListTask = ({ id, text }) => {
   const dispatch = useDispatch();
   return (
-    <li>
+    <li className="element">
       <input onChange={() => dispatch(toggleTodo(id))} type="checkbox" />
       <span>{text}</span>
 
