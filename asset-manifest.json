@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/todo-list-react-redux-toolkit/static/css/main.013f9dbf.css",
-    "main.js": "/todo-list-react-redux-toolkit/static/js/main.a8de22a1.js",
+    "main.css": "/todo-list-react-redux-toolkit/static/css/main.4a292587.css",
+    "main.js": "/todo-list-react-redux-toolkit/static/js/main.45dc3143.js",
+    "static/media/21077233-removebg-preview 1.png": "/todo-list-react-redux-toolkit/static/media/21077233-removebg-preview 1.84b3c83337739de1db11.png",
     "index.html": "/todo-list-react-redux-toolkit/index.html",
-    "main.013f9dbf.css.map": "/todo-list-react-redux-toolkit/static/css/main.013f9dbf.css.map",
-    "main.a8de22a1.js.map": "/todo-list-react-redux-toolkit/static/js/main.a8de22a1.js.map"
+    "main.4a292587.css.map": "/todo-list-react-redux-toolkit/static/css/main.4a292587.css.map",
+    "main.45dc3143.js.map": "/todo-list-react-redux-toolkit/static/js/main.45dc3143.js.map"
   },
   "entrypoints": [
-    "static/css/main.013f9dbf.css",
-    "static/js/main.a8de22a1.js"
+    "static/css/main.4a292587.css",
+    "static/js/main.45dc3143.js"
   ]
 }
