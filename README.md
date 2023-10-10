@@ -1,6 +1,6 @@
 # Список задач
 
-![Alt text](./src/images/image-1.png)
+<img height="200px" src='./src/images/image-1.png' alt='скрин проекта'/>
 
 ## Ссылки:
 
