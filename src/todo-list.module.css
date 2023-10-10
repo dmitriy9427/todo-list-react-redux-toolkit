@@ -1,11 +1,17 @@
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px auto;
+}
+
 .todo {
   text-align: center;
-  margin: 50px auto;
-  max-width: 600px;
-  min-height: 400px;
+  width: 100%;
+  margin: 58px 92px 57px 124px;
   border-radius: 30px;
   padding: 20px;
-  background-color: rgb(138, 136, 136);
+  background-image: linear-gradient(-30deg, #ff0000, #8600ff, #f4afcf);
 }
 
 .inputfield {
@@ -54,10 +60,10 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: antiquewhite;
   margin-bottom: 9px;
   padding: 5px;
-  border-radius: 20px;
+  color: white;
+  border-bottom: 1px solid gold;
 }
 
 li input:checked + span {
@@ -72,7 +78,6 @@ li span {
 }
 
 svg {
-  opacity: 0.5;
   padding-top: 4px;
   transition: opacity 0.7 ease-in-out;
 }

@@ -1,5 +1,9 @@
 # Список задач
 
+![Alt text](image-1.png)
+
+## Ссылки:
+
 <a href="https://dmitriy9427.github.io/todo-list-react-redux-toolkit/" target='_blank'>Посмотреть можно здесь</a>
 
 ## Стэк:
