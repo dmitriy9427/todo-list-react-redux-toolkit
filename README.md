@@ -1,6 +1,6 @@
 # Список задач
 
-![Alt text](image-1.png)
+![Alt text](./src/images/image-1.png)
 
 ## Ссылки:
 
